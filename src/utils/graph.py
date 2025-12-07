@@ -46,7 +46,7 @@ def build_geo_network(df: pd.DataFrame, start_year: int, end_year: int) -> nx.Di
                 
     return G
 
-def build_migration_network(df: pd.DataFrame, year: int) -> nx.DiGraph:
+def build_migration_network_for_year(df: pd.DataFrame, year: int) -> nx.DiGraph:
     """
     Build directed migration network for a specific year.
     
