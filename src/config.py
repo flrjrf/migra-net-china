@@ -9,7 +9,7 @@ PROJECT_ROOT = Path(__file__).parent
 
 class BaseConfig:
     data_folder: os.PathLike = PROJECT_ROOT / "data"
-    china_provinces_path = data_folder / "china_provinces"
+    china_provinces_path = data_folder / "china_provinces.json"
     data_csv_path = data_folder / "data.csv"
     output_path: os.PathLike = PROJECT_ROOT / "output"
     SEED: int = 42
