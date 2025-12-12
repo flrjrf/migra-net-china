@@ -1,17 +1,21 @@
-# Keep class relative location to 
+# Keep class relative location to
 import os
 from pathlib import Path
 import platform
 from types import ModuleType
 
-PROJECT_ROOT = Path(__file__).parent
+# PROJECT_ROOT should be the parent of src directory (the actual project root)
+PROJECT_ROOT = Path(__file__).parent.parent
 
 class BaseConfig:
-    data_folder: os.PathLike = PROJECT_ROOT / "data"
+    data_folder: os.PathLike = PROJECT_ROOT / "src" / "data"
     china_provinces_path = data_folder / "china_provinces.json"
     level_path = data_folder / "level.json"
     data_csv_path = data_folder / "data.csv"
-    cleaned_data_csv_path = data_folder / "cleaned_data.csv"    
+    cleaned_data_csv_path = data_folder / "cleaned_data.csv"
     output_path: os.PathLike = PROJECT_ROOT / "output"
     SEED: int = 42
     geo_data_subset = ['hometown_lon', 'hometown_lat', 'first_lon', 'first_lat', 'current_lon', 'current_lat']
+
+# Create a singleton instance that can be imported
+config = BaseConfig()
