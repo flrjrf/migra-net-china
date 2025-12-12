@@ -69,18 +69,3 @@ class EdgeAttributes():
         self.flow_index = flow_index
         self.from_node_attrs = from_node_attrs
         self.to_node_attrs = to_node_attrs
-    
-
-"""
-Index(['hometown_code', 'hometown_province_code', 'hometown_city_code',
-       'hometown_county_code', 'hometown_lon', 'hometown_lat',
-       'first_flow_code', 'first_flow_province_code', 'first_flow_city_code',
-       'first_flow_county_code', 'first_lon', 'first_lat', 'year_first_flow',
-       'month_first_flow', 'current_code', 'current_province_code',
-       'current_city_code', 'current_county_code', 'current_lon',
-       'current_lat', 'year_current_flow', 'month_current_flow', 'gender',
-       'edu_level', 'average_family_cost_per_month',
-       'average_family_income_per_month', 'num_flows_total', 'if_stay',
-       'if_change_household_local', 'how_long_to_stay'],
-"""
-
